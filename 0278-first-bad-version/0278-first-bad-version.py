@@ -9,19 +9,20 @@ class Solution(object):
         :type n: int
         :rtype: int
         """
-        low = 1
-        high = n
-        result = n
         
-        while (low<=high):
-            mid =(low+high)/2
-            if(isBadVersion(mid)):
-                result = mid
-                high = mid - 1
+        l = 1
+        h = n
+        
+        while (l < h):
+            mid = (l + h) // 2
+            if isBadVersion(mid):
+                h = mid
             else:
-                low = mid + 1
-        
-        return result
+                l = mid + 1
+                
+        return l
             
+        
+        
             
         
