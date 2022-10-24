@@ -7,8 +7,7 @@ class Solution(object):
         counter = 0
         
         while n:
-            counter += n%2
-            n = n >> 1
-            
+            n = n & (n - 1)
+            counter +=1
         return counter
         
