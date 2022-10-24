@@ -10,6 +10,7 @@ class Solution(object):
         :rtype: int
         """
         
+        
         l = 1
         h = n
         
